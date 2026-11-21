@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="100%" stop-color="#d4f1f9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="600" fill="url(#sky)"/>
+
+  <!-- Ground -->
+  <rect y="570" width="400" height="30" fill="#8B6914"/>
+  <rect y="570" width="400" height="8" fill="#5a8a00"/>
+
+  <!-- Pipes left -->
+  <rect x="60" y="0" width="52" height="180" fill="#4caf50"/>
+  <rect x="56" y="160" width="60" height="20" fill="#388e3c"/>
+  <rect x="64" y="0" width="8" height="180" fill="rgba(255,255,255,0.15)"/>
+  <rect x="60" y="380" width="52" height="220" fill="#4caf50"/>
+  <rect x="56" y="380" width="60" height="20" fill="#388e3c"/>
+  <rect x="64" y="380" width="8" height="220" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Pipes right -->
+  <rect x="250" y="0" width="52" height="220" fill="#4caf50"/>
+  <rect x="246" y="200" width="60" height="20" fill="#388e3c"/>
+  <rect x="254" y="0" width="8" height="220" fill="rgba(255,255,255,0.15)"/>
+  <rect x="250" y="420" width="52" height="180" fill="#4caf50"/>
+  <rect x="246" y="420" width="60" height="20" fill="#388e3c"/>
+  <rect x="254" y="420" width="8" height="180" fill="rgba(255,255,255,0.15)"/>
+
+  <!-- Bird body -->
+  <circle cx="80" cy="300" r="16" fill="#FFD700"/>
+  <!-- Wing -->
+  <ellipse cx="76" cy="300" rx="10" ry="7" fill="#FFA500" transform="rotate(-23,76,300)"/>
+  <!-- Eye white -->
+  <circle cx="86" cy="296" r="5" fill="#fff"/>
+  <!-- Pupil -->
+  <circle cx="87" cy="296" r="2.5" fill="#222"/>
+  <!-- Beak -->
+  <polygon points="94,299 102,302 94,305" fill="#ff6600"/>
+
+  <!-- Dark overlay -->
+  <rect width="400" height="600" fill="rgba(0,0,0,0.35)"/>
+
+  <!-- Title text -->
+  <text x="200" y="270" font-family="'Segoe UI', system-ui, sans-serif" font-weight="bold" font-size="42" fill="white" text-anchor="middle">Flappy Bird</text>
+  <text x="200" y="320" font-family="'Segoe UI', system-ui, sans-serif" font-size="20" fill="#ffffee" text-anchor="middle">Press Space or Tap to start</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="100%" stop-color="#d4f1f9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="400" height="600" fill="url(#sky)"/>
+
+  <!-- Ground -->
+  <rect y="570" width="400" height="30" fill="#8B6914"/>
+  <rect y="570" width="400" height="8" fill="#5a8a00"/>
+
+  <!-- Pipe 1 -->
+  <rect x="100" y="0" width="52" height="170" fill="#4caf50"/>
+  <rect x="96" y="150" width="60" height="20" fill="#388e3c"/>
+  <rect x="100" y="370" width="52" height="200" fill="#4caf50"/>
+  <rect x="96" y="370" width="60" height="20" fill="#388e3c"/>
+
+  <!-- Pipe 2 -->
+  <rect x="280" y="0" width="52" height="210" fill="#4caf50"/>
+  <rect x="276" y="190" width="60" height="20" fill="#388e3c"/>
+  <rect x="280" y="410" width="52" height="160" fill="#4caf50"/>
+  <rect x="276" y="410" width="60" height="20" fill="#388e3c"/>
+
+  <!-- Bird (falling, tilted down) -->
+  <g transform="translate(80,520) rotate(45)">
+    <circle cx="0" cy="0" r="16" fill="#FFD700"/>
+    <ellipse cx="-4" cy="3" rx="10" ry="7" fill="#FFA500" transform="rotate(-23,-4,3)"/>
+    <circle cx="6" cy="-4" r="5" fill="#fff"/>
+    <circle cx="7" cy="-4" r="2.5" fill="#222"/>
+    <polygon points="14,-1 22,2 14,5" fill="#ff6600"/>
+  </g>
+
+  <!-- Score -->
+  <text x="200" y="60" font-family="'Segoe UI', system-ui, sans-serif" font-weight="bold" font-size="36" stroke="#333" stroke-width="3" fill="white" text-anchor="middle" paint-order="stroke">5</text>
+
+  <!-- Dark overlay -->
+  <rect width="400" height="600" fill="rgba(0,0,0,0.45)"/>
+
+  <!-- Game Over text -->
+  <text x="200" y="250" font-family="'Segoe UI', system-ui, sans-serif" font-weight="bold" font-size="42" fill="#ff4444" text-anchor="middle">Game Over</text>
+  <text x="200" y="300" font-family="'Segoe UI', system-ui, sans-serif" font-size="24" fill="white" text-anchor="middle">Score: 5</text>
+  <text x="200" y="336" font-family="'Segoe UI', system-ui, sans-serif" font-size="24" fill="white" text-anchor="middle">Best: 5</text>
+  <text x="200" y="380" font-family="'Segoe UI', system-ui, sans-serif" font-size="18" fill="#ffffee" text-anchor="middle">Press Space or Tap to restart</text>
+</svg>
